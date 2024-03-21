@@ -38,25 +38,23 @@ def glucoseLevelDistribution(data):
 
 def classifyAges(age):
     if age < 26:
-        return f'0. 18-25'
-    elif age < 33:
-        return f'1. 26-32'
-    elif age < 39:
-        return f'2. 33-39'
-    elif age < 46:
-        return f'3. 39-45'
-    elif age < 53:
-        return f'4. 46-52'
-    elif age < 60:
-        return f'5. 53-59'
-    elif age < 67:
-        return f'6. 60-66'
+        return f'1. 18-25'
+    elif age < 34:
+        return f'2. 26-33'
+    elif age < 42:
+        return f'3. 34-41'
+    elif age < 50:
+        return f'4. 42-49'
+    elif age < 58:
+        return f'5. 50-57'
+    elif age < 66:
+        return f'6. 58-65'
     elif age < 74:
-        return f'7. 67-73'
-    elif age < 81:
-        return f'8. 74-80'
+        return f'7. 66-73'
+    elif age < 82:
+        return f'8. 74-81'
     else:
-        return f'9. +80'
+        return f'9. +82'
 
 def classifyGlucose(x):
     if x <= 140:
