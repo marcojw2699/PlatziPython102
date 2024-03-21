@@ -1,22 +1,15 @@
 import matplotlib.pyplot as plt
 
-def generateBarChart(labels,values):
+def generate_bar_chart(labels,values,text):
     
     fig, ax = plt.subplots()
     ax.bar(labels,values)
+    plt.title(f"{text} bar chart")
     plt.show()
 
-def generatePieChart(labels,values):
+def generate_pie_chart(labels,values,text):
     fig, ax = plt.subplots()
     ax.pie(values,labels=labels)
     ax.axis('equal')
-    plt.show()
-
-
-
-if __name__ == '__main__':
-    labels = ['a','b','c']
-    values = [10,40,800]
-    #generateBarChart(labels,values)
-    generatePieChart(labels,values)
-
+    plt.title(f"{text} pie chart")
+    plt.show() 
